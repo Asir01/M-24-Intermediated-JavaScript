@@ -1,15 +1,13 @@
 const students = [
-    { id: 1, name: "fayez" }, { id: 2, name: "riyad" }, { id: 3, name: "morshed" }, { id: 4, name: "sakib" }, { id: 5, name: "arafat" }, { id: 6, name: "shahed" }
+    {id: 21, name: 'Omar Sunny'},
+    {id: 31, name: 'Maannaaaaaa'},
+    {id: 41, name: 'Moyouri'},
+    {id: 71, name: 'DeepJol'}
 ];
-// const studentsName = [];
-// for (let i = 0; i < students.length; i++) {
-//     const element = students[i];
-//     const name = element.name
-//     studentsName.push(name);
-// }
 
-// this condition use with map keywords
-const stuName = students.map(name => name.name);
-const stuId = students.map(name => name.id);
-console.log(stuName);
-console.log(stuId);
+const names = students.map( s => s.name);
+const ids = students.map(s => s.id);
+const bigger = students.filter( s => s.id>40);
+const biggerOne = students.find( s => s.id>40);
+
+console.log(biggerOne);
